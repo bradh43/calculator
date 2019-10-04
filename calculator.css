@@ -1,0 +1,119 @@
+@font-face {
+    font-family: sfPro;
+    src: url("./assets/fonts/SF-Pro-Display-Medium.otf");
+}
+.background {
+    background-image: url("./assets/images/desk.jpg");
+}
+.calculator {
+    display: block;
+    background-image: linear-gradient(to bottom right, rgb(30,30,30), black);
+    padding: 10px;
+    margin: 50px auto;
+    width: 95vw;
+    max-width: 300px;
+    height: 460px;
+    border-radius: 25px;
+    box-shadow: 10px 6px 10px rgba(25,25,25,0.9);
+}
+.screen {
+    padding: 0 20px;
+    margin: 20px auto;
+}
+.screen-input {
+    width: 100%;
+    text-align: right;
+    font-size: 30px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    border-radius: 10px;
+}
+.number-pad {
+    font-family: sfPro;
+    margin: 0 10px;
+}
+.stored-value {
+    color: lightgray;
+    padding: 5px;
+}
+.number-pad input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.button {
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-color: #eee;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+    user-select: none;
+    float: left;
+    color: white;
+}
+.operator {
+    background-color: rgb(255,165,0);
+}
+.secondary {
+    background-color: lightGray;
+    color: black;
+}
+.number {
+    background-color: rgb(90,90,90);
+}
+#sign label {
+    font-size: 35px;
+}
+
+#zero {
+    width: 120px;
+    border-radius: 50vh;
+    text-align: left;
+}
+#zero label {
+    padding-left: 15px;
+}
+.operator:hover {
+    background-color: rgb(240,150,0);
+}
+.number:hover {
+    background-color: rgb(120,120,120);
+}
+.secondary:hover {
+    background-color: rgb(185,185,185);
+}
+.value {
+    top: 50%;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + .operator > label {
+    color: rgb(255,165,0);
+
+}
+input[type="radio"]:checked + .operator {
+    background-color: white;
+}
+
+.bottom-message{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 5px;
+    bottom: 0px;
+}
+.bottom-message p {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 380px) {
+    .screen-input {
+        max-width: 250px;
+    }
+  }
+
